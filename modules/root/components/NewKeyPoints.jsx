@@ -48,12 +48,12 @@ const NewKeyPoints = () => {
         <p className="font-medium">Here is what makes us different</p>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 px-4 py-6 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-4 py-6 w-full lg:max-w-5xl mx-auto">
         {cardData.map((data, index) => (
           <div 
             key={index} 
             className={`flex flex-col justify-center gap-8 items-center bg-[#fdf8f0] p-4 rounded-lg shadow-md 
-            ${index === cardData.length - 1 ? "col-span-3" : ""}`}
+            ${index === cardData.length - 1 ? "lg:col-span-3" : ""}`}
           >
             <h2 className="font-semibold">{data.title}</h2>
             <Image src={data.image} alt={data.title} width={180} height={180} className="" />
